@@ -24,17 +24,20 @@
     .nav-link:hover {
       text-decoration: underline;
     }
-    .btn-outline-success {
-      border-color: #ff7518;
-      color: #ff7518;
-    }
-    .btn-outline-success:hover {
+    .btn-success {
       background-color: #ff7518;
-      color: white;
+      border: none;
+    }
+    .btn-success:hover {
+      background-color: #e65c00;
     }
     .card {
       background-color: #2c2c2c;
       color: white;
+    }
+    .card:hover {
+      box-shadow: 0 0 20px orange;
+      transition: 0.3s;
     }
     .list-group-item {
       background-color: #333;
@@ -45,13 +48,10 @@
       background-color: #ff7518;
       color: white;
     }
-    .card:hover {
-      box-shadow: 0 0 20px orange;
-      transition: 0.3s;
-    }
     footer {
       border-top: 2px solid #ff7518;
     }
+    img {}
   </style>
 </head>
 <body>
@@ -64,7 +64,7 @@
           <p class="text-muted">Welcome to the legendary mysterious land</p>
         </div>
         <div class="col-md-3 text-end">
-          <img src="../images/logo.jpg" alt="Halloween Logo" width="100" style="border-radius: 50px;">
+          <img src="images/logo.jpg" alt="Halloween Logo" width="100" style="border-radius: 50px;">
         </div>
       </div>
     </header>
@@ -95,21 +95,84 @@
 
     <!-- Main Content -->
     <div class="row">
-      <!-- Left Content -->
+      <!-- Member Section -->
       <div class="col-md-9">
-        <div class="card mb-4">
-          <div class="card-header text-center">
-            <h4>👻 Lịch sử & Tập tục Halloween</h4>
+        <div class="row">
+          <!-- Thành viên mẫu -->
+          <!-- Lặp lại cho từng thành viên -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 1</h4>
+              </div>
+              <div class="card-body">
+                <img src="images/m1.jpg" alt="Thành viên 1" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Captain</strong></p>
+                <button class="btn btn-success">Solar Flare</button>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <p style="font-size: large;">
-            Tìm hiểu về Halloween bạn sẽ hiểu rõ hơn về nguồn gốc của ngày hội này. Theo đó, sự tích Halloween bắt đầu từ một ngày lễ cổ của người Celtic được gọi là Samhain – ngày kỷ niệm một năm mới. Người dân Celtic lấy ngày này để tôn vinh vụ mùa đã thu hoạch, đánh dấu thời điểm chuyển sang mùa đông lạnh giá. 
-
-Bên cạnh đó, người Celtic cũng tin rằng, ngày 31/10 hàng năm là thời điểm địa ngục mở cửa, lúc này ranh giới giữa sự sống và cái chết vô cùng mong manh. Sau này, đến thế kỷ thứ 8, Giáo hoàng Gregorius III quyết định chuyển ngày lễ Các Thánh Tử đạo (ngày Các Thánh) sang ngày 1 tháng 11. Vào ngày Các Thánh, người dân sẽ tổ chức các hoạt động của lễ Samhain và đêm trước ngày lễ được gọi là Halloween. 
-
-            </p>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 2</h4>
+              </div>
+              <div class="card-body">
+                <img src="images/m2.jpg" alt="Thành viên 2" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Phó trưởng</strong></p>
+                <button class="btn btn-success">Rem</button>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 3</h4>
+              </div>
+              <div class="card-body">
+                <img src="images/m3.jpg" alt="Thành viên 3" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Thư kí</strong></p>
+                <button class="btn btn-success">Mei Misaki</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 4</h4>
+              </div>
+              <div class="card-body">
+                <img src="images/m4.jpg" alt="Thành viên 4" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Chịu trách nhiệm nội dung</strong></p>
+                <button class="btn btn-success">Cat</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 5</h4>
+              </div>
+              <div class="card-body">
+                <img src="images/m5.jpg" alt="Thành viên 5" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Trưởng ban hậu cần</strong></p>
+                <button class="btn btn-success">???</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 6</h4>
+              </div>
+              <div class="card-body">
+                <img src="images/m6.jpg" alt="Thành viên 6" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Captain</strong></p>
+                <button class="btn btn-success">Trưởng ban tổ chức</button>
+              </div>
+            </div>
+          </div>
+         </div>
       </div>
 
       <!-- Sidebar -->
@@ -139,10 +202,14 @@ Bên cạnh đó, người Celtic cũng tin rằng, ngày 31/10 hàng năm là t
   <!-- jQuery Effects -->
   <script>
     $(document).ready(function(){
-      $(".list-group-item").hover(function(){
-        $(this).css("font-weight", "bold");
+      $(".card").hover(function(){
+        $(this).css("transform", "scale(1.03)");
       }, function(){
-        $(this).css("font-weight", "normal");
+        $(this).css("transform", "scale(1)");
+      });
+
+      $(".btn-success").click(function(){
+        alert("🎃 Bạn đã kích hoạt sức mạnh Halloween!");
       });
     });
   </script>
