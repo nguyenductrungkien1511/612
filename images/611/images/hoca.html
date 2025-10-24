@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ho ca vui nhon</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <!-- Nút điều khiển -->
+             <div style="position: fixed; top: 10px; left: 10px; z-index: 999;">
+                <button onclick="changeBackground()">Đổi ảnh nền</button>
+                <button onclick="toggleMusic()">Bật/Tắt nhạc</button>
+            </div>
+
+        <!-- Nhạc nền -->
+            <audio id="backgroundMusic" loop autoplay>
+            <source src="Legends Never Die, League Of Legend Ft. Agianst The Current - YouTube.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ audio.
+            </audio>
+
+        <!-- Nội dung -->
+        <div id="content">
+            <!-- Các nhân vật -->
+                <div id="shark"><img src="shark.png" width="auto" height="auto"></div>
+                <div id="diver1"><img src="diver1.png" width="auto" height="auto"></div>
+                <div id="diver2"><img src="diver2.png" width="auto" height="auto"></div>
+                <div id="diver3"><img src="diver3.png" width="auto" height="auto"></div>
+                <div id="turtle"><img src="turtle.png" width="auto" height="auto"></div>
+                <div id="goldFishSchool"><img src="goldFishSchool.png" width="auto" height="auto"></div>
+                <div id="faintSchool"><img src="faintSchool.png" width="auto" height="auto"></div>
+        </div>
+
+        <!-- Script điều khiển -->
+        <script>
+            // Danh sách ảnh nền
+            const backgrounds = ["wallpaper1.jpg", "wallpaper2.jpg", "wallpaper3.jpg"];
+            let currentBg = 0;
+
+            function changeBackground() {
+                 currentBg = (currentBg + 1) % backgrounds.length;
+                 document.body.style.backgroundImage = `url('${backgrounds[currentBg]}')`;
+                 document.body.style.backgroundSize = "cover";
+                 document.body.style.backgroundRepeat = "no-repeat";
+                }
+
+             function toggleMusic() {
+                const music = document.getElementById("backgroundMusic");
+                if (music.paused) {
+                    music.play();
+                } 
+                else {
+                    music.pause();
+                }
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>👻 Halloween Legends</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar, .card-header, footer {
+      background-color: #ff7518 !important;
+      color: white;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .btn-success {
+      background-color: #ff7518;
+      border: none;
+    }
+    .btn-success:hover {
+      background-color: #e65c00;
+    }
+    .card {
+      background-color: #2c2c2c;
+      color: white;
+    }
+    .card:hover {
+      box-shadow: 0 0 20px orange;
+      transition: 0.3s;
+    }
+    .list-group-item {
+      background-color: #333;
+      color: #f5f5f5;
+      border: none;
+    }
+    .list-group-item:hover {
+      background-color: #ff7518;
+      color: white;
+    }
+    footer {
+      border-top: 2px solid #ff7518;
+    }
+    img {}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-9 text-start">
+          <h1>🕸️ Stories of Horror Legends</h1>
+          <p class="text-muted">Welcome to the legendary mysterious land</p>
+        </div>
+        <div class="col-md-3 text-end">
+          <img src="../images/logo.jpg" alt="Halloween Logo" width="100" style="border-radius: 50px;">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Trang chủ</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="Halloween.html">Giới thiệu nhóm</a></li>
+            <li class="nav-item"><a class="nav-link" href="lichsu.html">Lịch sử Halloween</a></li>
+            <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="suutam.html">Sưu tầm</a></li>
+            <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+            <li class="nav-item"><a class="nav-link" href="dangky.html">Đăng ký tham gia</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Bạn muốn tìm gì?">
+            <button class="btn btn-outline-success" type="submit">Tìm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="row">
+      <!-- Member Section -->
+      <div class="col-md-9">
+        <div class="row">
+          <!-- Thành viên mẫu -->
+          <!-- Lặp lại cho từng thành viên -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 1</h4>
+              </div>
+              <div class="card-body">
+                <img src="../images/m1.jpg" alt="Thành viên 1" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Captain</strong></p>
+                <button class="btn btn-success">Solar Flare</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 2</h4>
+              </div>
+              <div class="card-body">
+                <img src="../images/m2.jpg" alt="Thành viên 2" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Phó trưởng</strong></p>
+                <button class="btn btn-success">Rem</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 3</h4>
+              </div>
+              <div class="card-body">
+                <img src="../images/m3.jpg" alt="Thành viên 3" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Thư kí</strong></p>
+                <button class="btn btn-success">Mei Misaki</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 4</h4>
+              </div>
+              <div class="card-body">
+                <img src="../images/m4.jpg" alt="Thành viên 4" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Chịu trách nhiệm nội dung</strong></p>
+                <button class="btn btn-success">Cat</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 5</h4>
+              </div>
+              <div class="card-body">
+                <img src="../images/m5.jpg" alt="Thành viên 5" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Trưởng ban hậu cần</strong></p>
+                <button class="btn btn-success">???</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 text-center">
+              <div class="card-header">
+                <h4 class="card-title">🧛 Thành viên 6</h4>
+              </div>
+              <div class="card-body">
+                <img src="../images/m6.jpg" alt="Thành viên 6" class="img-fluid mb-3" width="200px">
+                <p>Vị trí: <strong>Captain</strong></p>
+                <button class="btn btn-success">Trưởng ban tổ chức</button>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <div class="card-header"><strong>🎭 Chủ đề Halloween</strong></div>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Gợi ý hóa trang</a>
+            <a href="#" class="list-group-item">Mẹo hù dọa 100%</a>
+            <a href="#" class="list-group-item">Cách săn mồi trong đêm</a>
+            <a href="#" class="list-group-item">Chế độc dược bí truyền</a>
+            <a href="#" class="list-group-item">Ảo thuật và bùa chú</a>
+            <a href="#" class="list-group-item">Truyền thuyết rùng rợn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="card mt-4 text-center">
+      <div class="card-body">
+        👻 Crazy.D.Dave &copy; 2025 — Happy Halloween!
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery Effects -->
+  <script>
+    $(document).ready(function(){
+      $(".card").hover(function(){
+        $(this).css("transform", "scale(1.03)");
+      }, function(){
+        $(this).css("transform", "scale(1)");
+      });
+
+      $(".btn-success").click(function(){
+        alert("🎃 Bạn đã kích hoạt sức mạnh Halloween!");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>👻 Halloween Legends</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar, .card-header, footer {
+      background-color: #ff7518 !important;
+      color: white;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    .btn-outline-success {
+      border-color: #ff7518;
+      color: #ff7518;
+    }
+    .btn-outline-success:hover {
+      background-color: #ff7518;
+      color: white;
+    }
+    .card {
+      background-color: #2c2c2c;
+      color: white;
+    }
+    .list-group-item {
+      background-color: #333;
+      color: #f5f5f5;
+      border: none;
+    }
+    .list-group-item:hover {
+      background-color: #ff7518;
+      color: white;
+    }
+    .card:hover {
+      box-shadow: 0 0 20px orange;
+      transition: 0.3s;
+    }
+    footer {
+      border-top: 2px solid #ff7518;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-9 text-start">
+          <h1>🕸️ Stories of Horror Legends</h1>
+          <p class="text-muted">Welcome to the legendary mysterious land</p>
+        </div>
+        <div class="col-md-3 text-end">
+          <img src="../images/logo.jpg" alt="Halloween Logo" width="100" style="border-radius: 50px;">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Trang chủ</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="Halloween.html">Giới thiệu nhóm</a></li>
+            <li class="nav-item"><a class="nav-link" href="lichsu.html">Lịch sử Halloween</a></li>
+            <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
+            <li class="nav-item"><a class="nav-link" href="suutam.html">Sưu tầm</a></li>
+            <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+            <li class="nav-item"><a class="nav-link" href="dangky.html">Đăng ký tham gia</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Bạn muốn tìm gì?">
+            <button class="btn btn-outline-success" type="submit">Tìm</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="row">
+      <!-- Left Content -->
+      <div class="col-md-9">
+        <div class="card mb-4">
+          <div class="card-header text-center">
+            <h4>👻 Lịch sử & Tập tục Halloween</h4>
+          </div>
+          <div class="card-body">
+            <p style="font-size: large;">
+            Tìm hiểu về Halloween bạn sẽ hiểu rõ hơn về nguồn gốc của ngày hội này. Theo đó, sự tích Halloween bắt đầu từ một ngày lễ cổ của người Celtic được gọi là Samhain – ngày kỷ niệm một năm mới. Người dân Celtic lấy ngày này để tôn vinh vụ mùa đã thu hoạch, đánh dấu thời điểm chuyển sang mùa đông lạnh giá. 
+
+Bên cạnh đó, người Celtic cũng tin rằng, ngày 31/10 hàng năm là thời điểm địa ngục mở cửa, lúc này ranh giới giữa sự sống và cái chết vô cùng mong manh. Sau này, đến thế kỷ thứ 8, Giáo hoàng Gregorius III quyết định chuyển ngày lễ Các Thánh Tử đạo (ngày Các Thánh) sang ngày 1 tháng 11. Vào ngày Các Thánh, người dân sẽ tổ chức các hoạt động của lễ Samhain và đêm trước ngày lễ được gọi là Halloween. 
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <div class="card-header"><strong>🎭 Chủ đề Halloween</strong></div>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Gợi ý hóa trang</a>
+            <a href="#" class="list-group-item">Mẹo hù dọa 100%</a>
+            <a href="#" class="list-group-item">Cách săn mồi trong đêm</a>
+            <a href="#" class="list-group-item">Chế độc dược bí truyền</a>
+            <a href="#" class="list-group-item">Ảo thuật và bùa chú</a>
+            <a href="#" class="list-group-item">Truyền thuyết rùng rợn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="card mt-4 text-center">
+      <div class="card-body">
+        👻 Crazy.D.Dave &copy; 2025 — Happy Halloween!
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery Effects -->
+  <script>
+    $(document).ready(function(){
+      $(".list-group-item").hover(function(){
+        $(this).css("font-weight", "bold");
+      }, function(){
+        $(this).css("font-weight", "normal");
+      });
+    });
+  </script>
+</body>
+</html>
